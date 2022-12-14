@@ -29,9 +29,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         eeconfig_update_user(user_config.raw);  //更新状态
       } else { //如果松开
       }
-      return false;
+      return true;
     default:
-      return false;
+      return true;
     }   
 }
 
